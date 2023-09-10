@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
 
-{% block tiitle %}Inbox{% endblock %}
+{% block title %}Inbox{% endblock %}
 
 {% block content %}
 <h1 class="mb-6 text-3xl">Inbox</h1>
@@ -11,7 +11,7 @@
             <div class="p-6 flex bg-gray-100 rounded-xl">
                 <div class="pr-6">
                 <img src="{{ conversation.item.image.url }}" class="w-20 rounded-xl">
-             </div>
+                </div>
 
                 <div>
                     {% for member in conversation.members.all %}
