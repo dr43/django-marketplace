@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export REPOPATH=/home/l1bitrix/repo/*
+    - export SITEPATH=/home/l1bitrix/django-site/
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
